@@ -4,7 +4,7 @@
 /gps/ene/type Arb
 /gps/ene/diffspec 1
 /gps/hist/type arb
-/control/execute /home/ho09diti/GCR_PRIMARY/Z26_A56.mac
+/control/execute Z26_A56.mac
 /gps/hist/inter Lin
 
 #/gps/pos/type Surface
@@ -23,6 +23,6 @@
 #/gps/ang/mintheta 60 deg
 #/gps/ang/maxtheta 70 deg
 /gps/source/list
-
+/run/printProgress 100
 /tracking/verbose 0
 /run/beamOn 10000
