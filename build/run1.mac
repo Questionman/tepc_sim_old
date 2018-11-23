@@ -1,30 +1,27 @@
-# Macro file for example B1
-# 
-# Can be run in batch, without graphic
-# or interactively: Idle> /control/execute run1.mac
-#
-# Change the default number of workers (in multi-threading mode) 
-#/run/numberOfWorkers 4
-#
-# Initialize kernel
+/run/numberOfThreads 96
 /run/initialize
-#
-/control/verbose 2
-/run/verbose 2
-/event/verbose 0
-/tracking/verbose 1
-# 
-# gamma 6 MeV to the direction (0.,0.,1.)
-#
-/gun/particle gamma
-/gun/energy 6 MeV
-#
-/run/beamOn 5
-# 
-# proton 210 MeV to the direction (0.,0.,1.)
-#
-/gun/particle proton
-/gun/energy 210 MeV
-/tracking/verbose 2
-#
-/run/beamOn 1
+/gps/particle ion
+/gps/ion 26 56
+/gps/ene/type Arb
+/gps/ene/diffspec 1
+/gps/hist/type arb
+/control/execute /home/ho09diti/GCR_PRIMARY/Z26_A56.mac
+/gps/hist/inter Lin
+
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+/gps/pos/radius 0.25 m
+/gps/pos/centre 0 0 0 
+
+/gps/hist/type biaspt
+/gps/hist/point 0. 0.
+/gps/hist/point 0.5 1.
+/gps/hist/point 1 0.
+
+/gps/ang/type cos
+/gps/ang/mintheta 60 deg
+/gps/ang/maxtheta 70 deg
+/gps/source/list
+
+/tracking/verbose 0
+/run/beamOn 1000000000

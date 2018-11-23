@@ -29,7 +29,7 @@
 /// \brief Implementation of the B1PrimaryGeneratorAction class
 
 #include "B1PrimaryGeneratorAction.hh"
-
+#include "G4GeneralParticleSource.hh"
 #include "G4LogicalVolumeStore.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
@@ -44,27 +44,17 @@
 
 B1PrimaryGeneratorAction::B1PrimaryGeneratorAction()
 : G4VUserPrimaryGeneratorAction(),
-  fParticleGun(0), 
+  gun(0), 
   fEnvelopeBox(0)
 {
-  G4int n_particle = 1;
-  fParticleGun  = new G4ParticleGun(n_particle);
-
-  // default particle kinematic
-  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
-  G4String particleName;
-  G4ParticleDefinition* particle
-    = particleTable->FindParticle(particleName="proton");
-  fParticleGun->SetParticleDefinition(particle);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-  fParticleGun->SetParticleEnergy(0.1*GeV);
+  gun  = new G4GeneralParticleSource();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B1PrimaryGeneratorAction::~B1PrimaryGeneratorAction()
 {
-  delete fParticleGun;
+  delete gun;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -90,7 +80,7 @@ void B1PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
   if ( fEnvelopeBox ) {
     envSizeXY = fEnvelopeBox->GetXHalfLength()*2.;
-    envSizeZ = fEnvelopeBox->GetZHalfLength()*2.;
+    envSizeZ = fEnvelopeBox->GetZHalfLength()*2;
   }  
   else  {
     G4ExceptionDescription msg;
@@ -106,9 +96,9 @@ void B1PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double y0 = size * envSizeXY * (G4UniformRand()-0.5);
   G4double z0 = -0.5 * envSizeZ;
   */
-  fParticleGun->SetParticlePosition(G4ThreeVector(12*cm,12*cm,-5.*cm));
+ // gun->SetParticlePosition(G4ThreeVector(12*cm,12*cm,-5.*cm));
 
-  fParticleGun->GeneratePrimaryVertex(anEvent);
+  gun->GeneratePrimaryVertex(anEvent);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -52,9 +52,9 @@ B1EventAction::~B1EventAction()
 void B1EventAction::BeginOfEventAction(const G4Event*)
 {    
   fEdep = 0.;
-  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-  G4double init_energy = event->GetPrimaryVertex()->GetParticleEnergy();
-  analysisManager->FillNtupleDColumn(0,init_energy);
+//  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+//  G4double init_energy = event->GetPrimaryVertex()->GetParticleEnergy();
+//  analysisManager->FillNtupleDColumn(0,init_energy);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

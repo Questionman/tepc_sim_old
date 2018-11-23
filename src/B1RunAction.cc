@@ -81,7 +81,7 @@ void B1RunAction::BeginOfRunAction(const G4Run*)
   // reset accumulables to their initial values
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->Reset();
-
+/*
   G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
   analysisManager->OpenFile("data");
 
@@ -89,7 +89,7 @@ void B1RunAction::BeginOfRunAction(const G4Run*)
   analysisManager->CreateNtupleDColumn("init_energy");
   analysisManager->CreateNtupleDColumn("edep");
   analysisManager->FinishNtuple();
-  G4RunManager::GetRunManager()->SetPrintProgress(1000);
+  G4RunManager::GetRunManager()->SetPrintProgress(1000); */
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -125,19 +125,19 @@ void B1RunAction::EndOfRunAction(const G4Run* run)
    = static_cast<const B1PrimaryGeneratorAction*>
      (G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
   G4String runCondition;
-  if (generatorAction)
+/*  if (generatorAction)
   {
     const G4ParticleGun* particleGun = generatorAction->GetParticleGun();
     runCondition += particleGun->GetParticleDefinition()->GetParticleName();
     runCondition += " of ";
     G4double particleEnergy = particleGun->GetParticleEnergy();
     runCondition += G4BestUnit(particleEnergy,"Energy");
-  }
-  
+  } */
+ /* 
   G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
   analysisManager -> Write();
   analysisManager -> CloseFile();      
-
+*/
 
   // Print
   //  

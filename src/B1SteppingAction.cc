@@ -73,10 +73,10 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
 
   // collect energy deposited in this step
   G4double edepStep = step->GetTotalEnergyDeposit();
-  G4double pos_z = step->GetPreStepPoint()->GetPosition().getZ();
+/* G4double pos_z = step->GetPreStepPoint()->GetPosition().getZ();
   analysisManager->FillNtupleIColumn(0, (G4int)pos_z);
   analysisManager->FillNtupleDColumn(1, edepStep);
-  analysisManager->AddNtupleRow();
+  analysisManager->AddNtupleRow(); */
   fEventAction->AddEdep(edepStep);  
 }
 
