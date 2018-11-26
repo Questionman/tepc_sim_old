@@ -29,6 +29,8 @@
 /// \brief Implementation of the B1SteppingAction class
 
 #include "B1SteppingAction.hh"
+#include "B1RunData.hh"
+
 #include "B1EventAction.hh"
 #include "B1DetectorConstruction.hh"
 
@@ -61,7 +63,6 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
     fScoringVolume = detectorConstruction->GetScoringVolume();   
   }
 
-  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
   // get volume of the current step
   G4LogicalVolume* volume 
@@ -73,11 +74,13 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
 
   // collect energy deposited in this step
   G4double edepStep = step->GetTotalEnergyDeposit();
-/* G4double pos_z = step->GetPreStepPoint()->GetPosition().getZ();
-  analysisManager->FillNtupleIColumn(0, (G4int)pos_z);
-  analysisManager->FillNtupleDColumn(1, edepStep);
-  analysisManager->AddNtupleRow(); */
   fEventAction->AddEdep(edepStep);  
+
+  auto runData = static_cast<B1RunData*>
+    (G4RunManager::GetRunManager()->GetNonConstCurrentRun());
+
+
+  runData->Add(kAbs, edepStep, 0);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -312,6 +312,30 @@ src/B1RunAction.cc.s:
 	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s
 .PHONY : src/B1RunAction.cc.s
 
+src/B1RunData.o: src/B1RunData.cc.o
+.PHONY : src/B1RunData.o
+
+# target to build an object file
+src/B1RunData.cc.o:
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunData.cc.o
+.PHONY : src/B1RunData.cc.o
+
+src/B1RunData.i: src/B1RunData.cc.i
+.PHONY : src/B1RunData.i
+
+# target to preprocess a source file
+src/B1RunData.cc.i:
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunData.cc.i
+.PHONY : src/B1RunData.cc.i
+
+src/B1RunData.s: src/B1RunData.cc.s
+.PHONY : src/B1RunData.s
+
+# target to generate assembly for a file
+src/B1RunData.cc.s:
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunData.cc.s
+.PHONY : src/B1RunData.cc.s
+
 src/B1SteppingAction.o: src/B1SteppingAction.cc.o
 .PHONY : src/B1SteppingAction.o
 
@@ -368,6 +392,9 @@ help:
 	@echo "... src/B1RunAction.o"
 	@echo "... src/B1RunAction.i"
 	@echo "... src/B1RunAction.s"
+	@echo "... src/B1RunData.o"
+	@echo "... src/B1RunData.i"
+	@echo "... src/B1RunData.s"
 	@echo "... src/B1SteppingAction.o"
 	@echo "... src/B1SteppingAction.i"
 	@echo "... src/B1SteppingAction.s"

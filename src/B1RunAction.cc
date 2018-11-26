@@ -29,6 +29,8 @@
 /// \brief Implementation of the B1RunAction class
 
 #include "B1RunAction.hh"
+#include "B1RunData.hh"
+#include "B1Analysis.hh"
 #include "B1PrimaryGeneratorAction.hh"
 #include "B1DetectorConstruction.hh"
 // #include "B1Run.hh"
@@ -54,22 +56,54 @@ B1RunAction::B1RunAction()
   const G4double microgray = 1.e-6*gray;
   const G4double nanogray  = 1.e-9*gray;  
   const G4double picogray  = 1.e-12*gray;
+  const G4double femtogray = 1.e-15*gray;
    
   new G4UnitDefinition("milligray", "milliGy" , "Dose", milligray);
   new G4UnitDefinition("microgray", "microGy" , "Dose", microgray);
   new G4UnitDefinition("nanogray" , "nanoGy"  , "Dose", nanogray);
   new G4UnitDefinition("picogray" , "picoGy"  , "Dose", picogray); 
-
+  new G4UnitDefinition("femtogray", "femtoGy", "Dose", femtogray);
+  
   // Register accumulable to the accumulable manager
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->RegisterAccumulable(fEdep);
-  accumulableManager->RegisterAccumulable(fEdep2); 
+  accumulableManager->RegisterAccumulable(fEdep2);
+  
+  auto analysisManager = G4AnalysisManager::Instance();
+  G4cout << "Using " << analysisManager->GetType() << G4endl;
+
+  // Create directories 
+  //analysisManager->SetHistoDirectoryName("histograms");
+  //analysisManager->SetNtupleDirectoryName("ntuple");
+  analysisManager->SetVerboseLevel(1);
+  analysisManager->SetNtupleMerging(true);
+    // Note: merging ntuples is available only with Root output
+
+  // Book histograms, ntuple
+  //
+  
+  // Creating histograms
+  analysisManager->CreateH1("Eabs","Edep in absorber", 100, 0., 1000*MeV);
+ 
+  // Creating ntuple
+  //
+  analysisManager->CreateNtuple("B1", "Edep");
+  analysisManager->CreateNtupleDColumn("Eabs");
+  analysisManager->FinishNtuple();
+ 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B1RunAction::~B1RunAction()
-{}
+{
+  delete G4AnalysisManager::Instance();
+}
+
+G4Run* B1RunAction::GenerateRun()
+{
+  return (new B1RunData);
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -81,15 +115,12 @@ void B1RunAction::BeginOfRunAction(const G4Run*)
   // reset accumulables to their initial values
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->Reset();
-/*
-  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-  analysisManager->OpenFile("data");
 
-  analysisManager->CreateNtuple("event","event");
-  analysisManager->CreateNtupleDColumn("init_energy");
-  analysisManager->CreateNtupleDColumn("edep");
-  analysisManager->FinishNtuple();
-  G4RunManager::GetRunManager()->SetPrintProgress(1000); */
+  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+  // Open an output file
+  //
+  G4String fileName = "B1";
+  analysisManager->OpenFile(fileName);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -133,11 +164,6 @@ void B1RunAction::EndOfRunAction(const G4Run* run)
     G4double particleEnergy = particleGun->GetParticleEnergy();
     runCondition += G4BestUnit(particleEnergy,"Energy");
   } */
- /* 
-  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-  analysisManager -> Write();
-  analysisManager -> CloseFile();      
-*/
 
   // Print
   //  
@@ -161,7 +187,31 @@ void B1RunAction::EndOfRunAction(const G4Run* run)
      << G4endl
      << "------------------------------------------------------------"
      << G4endl
+     << "!!!!!!!!!!!!!! Depositied Energy : " << edep 
      << G4endl;
+
+  // print histogram statistics
+  //
+  auto analysisManager = G4AnalysisManager::Instance();
+  if ( analysisManager->GetH1(0) ) {
+    G4cout << G4endl << " ----> print histograms statistic ";
+    if(isMaster) {
+      G4cout << "for the entire run " << G4endl << G4endl; 
+    }
+    else {
+      G4cout << "for the local thread " << G4endl << G4endl; 
+    }
+    
+    G4cout << " EAbs : mean = " 
+       << G4BestUnit(analysisManager->GetH1(0)->mean(), "Energy") 
+       << " rms = " 
+       << G4BestUnit(analysisManager->GetH1(0)->rms(),  "Energy") << G4endl;   
+   }
+
+  // save histograms & ntuple
+  //
+  analysisManager->Write();
+  analysisManager->CloseFile();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -30,11 +30,26 @@
 
 #include "B1EventAction.hh"
 #include "B1RunAction.hh"
-
+#include "B1RunData.hh"
 #include "G4Event.hh"
 #include "G4RunManager.hh"
+#include "G4UnitsTable.hh"
+
+#include "Randomize.hh"
+#include <iomanip>
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+void B1EventAction::PrintEventStatistics(
+                              G4double absoEdep) const
+{
+  // print event statistics
+  G4cout
+     << "   Absorber: total energy: " 
+     << std::setw(7) << G4BestUnit(absoEdep, "Energy") 
+     << G4endl;
+}
+
 
 B1EventAction::B1EventAction(B1RunAction* runAction)
 : G4UserEventAction(),
@@ -52,17 +67,36 @@ B1EventAction::~B1EventAction()
 void B1EventAction::BeginOfEventAction(const G4Event*)
 {    
   fEdep = 0.;
-//  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-//  G4double init_energy = event->GetPrimaryVertex()->GetParticleEnergy();
-//  analysisManager->FillNtupleDColumn(0,init_energy);
+  auto runData 
+    = static_cast<B1RunData*>(
+        G4RunManager::GetRunManager()->GetNonConstCurrentRun());
+  runData->Reset();  
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void B1EventAction::EndOfEventAction(const G4Event*)
+void B1EventAction::EndOfEventAction(const G4Event* event)
 {   
   // accumulate statistics in run action
   fRunAction->AddEdep(fEdep);
+
+  auto runData 
+    = static_cast<B1RunData*>(
+        G4RunManager::GetRunManager()->GetNonConstCurrentRun());
+  runData->FillPerEvent();
+
+  //print per event (modulo n)
+  //
+  auto eventID = event->GetEventID();
+  auto printModulo = G4RunManager::GetRunManager()->GetPrintProgress();
+  if ( ( printModulo > 0 ) && ( eventID % printModulo == 0 ) ) {
+    G4cout << "---> End of event: " << eventID << G4endl;     
+
+    PrintEventStatistics(
+      runData->GetEdep(kAbs));
+  }
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -81,6 +81,7 @@ private:
 
 inline void B1RunData::Add(G4int id, G4double de, G4double dl) {
   fEdep[id] += de; 
+  fTrackLength[id] += dl;
 }
 
 inline G4String  B1RunData::GetVolumeName(G4int id) const {
@@ -90,6 +91,11 @@ inline G4String  B1RunData::GetVolumeName(G4int id) const {
 inline G4double  B1RunData::GetEdep(G4int id) const {
   return fEdep[id];
 }   
+
+inline G4double  B1RunData::GetTrackLength(G4int id) const {
+  return fTrackLength[id];
+}
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

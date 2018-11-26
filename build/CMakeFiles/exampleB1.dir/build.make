@@ -75,124 +75,9 @@ CMakeFiles/exampleB1.dir/exampleB1.cc.o.provides: CMakeFiles/exampleB1.dir/examp
 
 CMakeFiles/exampleB1.dir/exampleB1.cc.o.provides.build: CMakeFiles/exampleB1.dir/exampleB1.cc.o
 
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o: ../src/B1ActionInitialization.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o -c /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc
-
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc > CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i
-
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc -o CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s
-
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires:
-.PHONY : CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
-
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides.build
-.PHONY : CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides
-
-CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o: ../src/B1EventAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o -c /home/ho09diti/tepc_sim/src/B1EventAction.cc
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1EventAction.cc > CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1EventAction.cc -o CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires:
-.PHONY : CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides.build
-.PHONY : CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides
-
-CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o: ../src/B1RunAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o -c /home/ho09diti/tepc_sim/src/B1RunAction.cc
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1RunAction.cc > CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1RunAction.cc -o CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires:
-.PHONY : CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides.build
-.PHONY : CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides
-
-CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: ../src/B1SteppingAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o -c /home/ho09diti/tepc_sim/src/B1SteppingAction.cc
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1SteppingAction.cc > CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1SteppingAction.cc -o CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires:
-.PHONY : CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides.build
-.PHONY : CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides
-
-CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o: ../src/B1DetectorConstruction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o -c /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc > CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc -o CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires:
-.PHONY : CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
-	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides.build
-.PHONY : CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides
-
-CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o
-
 CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
 CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o: ../src/B1PrimaryGeneratorAction.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o -c /home/ho09diti/tepc_sim/src/B1PrimaryGeneratorAction.cc
 
@@ -213,26 +98,166 @@ CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o.provides: CMakeFiles/
 
 CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o
 
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.o: ../src/B1RunData.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1RunData.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1RunData.cc.o -c /home/ho09diti/tepc_sim/src/B1RunData.cc
+
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1RunData.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1RunData.cc > CMakeFiles/exampleB1.dir/src/B1RunData.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1RunData.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1RunData.cc -o CMakeFiles/exampleB1.dir/src/B1RunData.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1RunData.cc.o
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o: ../src/B1ActionInitialization.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o -c /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc > CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1ActionInitialization.cc -o CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o: ../src/B1DetectorConstruction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o -c /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc > CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1DetectorConstruction.cc -o CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o: ../src/B1RunAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o -c /home/ho09diti/tepc_sim/src/B1RunAction.cc
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1RunAction.cc > CMakeFiles/exampleB1.dir/src/B1RunAction.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1RunAction.cc -o CMakeFiles/exampleB1.dir/src/B1RunAction.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o: ../src/B1EventAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o -c /home/ho09diti/tepc_sim/src/B1EventAction.cc
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1EventAction.cc > CMakeFiles/exampleB1.dir/src/B1EventAction.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1EventAction.cc -o CMakeFiles/exampleB1.dir/src/B1EventAction.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o: ../src/B1SteppingAction.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ho09diti/tepc_sim/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o -c /home/ho09diti/tepc_sim/src/B1SteppingAction.cc
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ho09diti/tepc_sim/src/B1SteppingAction.cc > CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.i
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ho09diti/tepc_sim/src/B1SteppingAction.cc -o CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.s
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires:
+.PHONY : CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides.build
+.PHONY : CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides
+
+CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.provides.build: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o
+
 # Object files for target exampleB1
 exampleB1_OBJECTS = \
 "CMakeFiles/exampleB1.dir/exampleB1.cc.o" \
+"CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o" \
+"CMakeFiles/exampleB1.dir/src/B1RunData.cc.o" \
 "CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o" \
-"CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o" \
-"CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o" \
-"CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o" \
 "CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o" \
-"CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o"
+"CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o" \
+"CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o" \
+"CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o"
 
 # External object files for target exampleB1
 exampleB1_EXTERNAL_OBJECTS =
 
 exampleB1: CMakeFiles/exampleB1.dir/exampleB1.cc.o
-exampleB1: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o
-exampleB1: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o
-exampleB1: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o
-exampleB1: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o
-exampleB1: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o
 exampleB1: CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1RunData.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o
+exampleB1: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o
 exampleB1: CMakeFiles/exampleB1.dir/build.make
 exampleB1: /usr/local/lib64/libG4Tree.so
 exampleB1: /usr/local/lib64/libG4FR.so
@@ -292,12 +317,13 @@ CMakeFiles/exampleB1.dir/build: exampleB1
 .PHONY : CMakeFiles/exampleB1.dir/build
 
 CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/exampleB1.cc.o.requires
-CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
-CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
-CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
-CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
-CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
 CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1PrimaryGeneratorAction.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1RunData.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1ActionInitialization.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1DetectorConstruction.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1RunAction.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1EventAction.cc.o.requires
+CMakeFiles/exampleB1.dir/requires: CMakeFiles/exampleB1.dir/src/B1SteppingAction.cc.o.requires
 .PHONY : CMakeFiles/exampleB1.dir/requires
 
 CMakeFiles/exampleB1.dir/clean:

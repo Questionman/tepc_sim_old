@@ -49,7 +49,7 @@ class B1RunAction : public G4UserRunAction
     B1RunAction();
     virtual ~B1RunAction();
 
-    // virtual G4Run* GenerateRun();
+    virtual G4Run* GenerateRun();
     virtual void BeginOfRunAction(const G4Run*);
     virtual void   EndOfRunAction(const G4Run*);
 

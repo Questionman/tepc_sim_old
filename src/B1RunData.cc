@@ -60,10 +60,11 @@ void B1RunData::FillPerEvent()
   // accumulate statistic
   // in the order od the histograms, ntuple columns declarations
   G4int counter = 0;
-  for ( auto edep : fEdep ) {
-    analysisManager->FillH1(counter, edep);
-    analysisManager->FillNtupleDColumn(counter++, edep);
-  }
+  //for ( auto edep : fEdep ) {
+  G4double edep = fEdep[0];
+  analysisManager->FillH1(counter, edep);
+  analysisManager->FillNtupleDColumn(counter, edep);
+ // }
   analysisManager->AddNtupleRow();  
 }
 
