@@ -1,4 +1,4 @@
-/run/numberOfThreads 96
+/run/numberOfThreads 2
 /run/initialize
 /gps/particle ion
 /gps/ion 26 56
@@ -10,7 +10,7 @@
 
 /gps/pos/type Surface
 /gps/pos/shape Sphere
-/gps/pos/radius 0.25 m
+/gps/pos/radius 24.99 cm
 /gps/pos/centre 0 0 0 
 
 /gps/hist/type biaspt
@@ -19,9 +19,9 @@
 /gps/hist/point 1 0.
 
 /gps/ang/type cos
-/gps/ang/mintheta 60 deg
-/gps/ang/maxtheta 70 deg
+/gps/ang/mintheta 0 deg
+/gps/ang/maxtheta 90 deg
 /gps/source/list
-
+/run/printProgress 10
 /tracking/verbose 0
-/run/beamOn 1000000000
+/run/beamOn 500
